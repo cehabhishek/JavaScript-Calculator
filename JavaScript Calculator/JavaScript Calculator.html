@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="css/bootstrap.css" rel="stylesheet"/>
+	<script src="js/bootstrap.js"></script>	
+</head>
+<body style="background-color: gray;">
+	<div class="container-fluid">
+		<div class="row" style="height: 100px;"></div>
+		<div class="row">
+			<div class="col-sm-4"></div>
+
+			<div class="col-sm-4">
+				<h3 class="text-danger">Calculator By Abhishek Prajapati</h3>
+				<hr>
+				<form name="res">
+					<input type="text" name="ans" class="form-control" readonly>
+					<br>
+					<div class="row">
+						<div class="col-sm-3">
+							<input type="button" value=" 9 " class="form-control bg-warning" onclick="res.ans.value+='9'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 8 " class="form-control bg-warning" onclick="res.ans.value+='8'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 7 " class="form-control bg-warning" onclick="res.ans.value+='7'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" + " class="form-control bg-warning" onclick="res.ans.value+='+'">
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-sm-3">
+							<input type="button" value=" 6 " class="form-control bg-warning" onclick="res.ans.value+='6'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 5 " class="form-control bg-warning" onclick="res.ans.value+='5'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 4 " class="form-control bg-warning" onclick="res.ans.value+='4'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" - " class="form-control bg-warning" onclick="res.ans.value+='-'">
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-sm-3">
+							<input type="button" value=" 3 " class="form-control bg-warning" onclick="res.ans.value+='3'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 2 " class="form-control bg-warning" onclick="res.ans.value+='2'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" 1 " class="form-control bg-warning" onclick="res.ans.value+='1'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" * " class="form-control bg-warning" onclick="res.ans.value+='*'">
+						</div>
+					</div>
+
+					<br>
+					<div class="row">
+						<div class="col-sm-3">
+							<input type="button" value=" 0 " class="form-control bg-warning" onclick="res.ans.value+='0'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" . " class="form-control bg-warning" onclick="res.ans.value+='.'">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" = " class="form-control bg-warning" onclick="res.ans.value=eval(res.ans.value)">
+						</div>
+						<div class="col-sm-3">
+							<input type="button" value=" / " class="form-control bg-warning" onclick="res.ans.value+='/'">
+						</div>
+					</div>
+					<br>
+					<input type="button" value="AC" class="form-control bg-primary" onclick="res.ans.value=''">
+				</form>
+			</div>
+
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+</body>
+</html>
